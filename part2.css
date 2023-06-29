@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: poppins;
+    margin-top: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 10px;
+  }
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .card-location{
+    display: inline-block;
+    justify-content: flex-end;
+    margin-right: 100px;
+    align-content: space-between;
+  }
+  .card-noise{
+    display: inline-block;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-content: space-between;
+  }
+  .buttons1 :hover{
+    background-color:rgba(255, 255, 255, 0.8);
+    color: black;
+
+  }
+  .buttons1 button{
+    width: 60px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+  }
+  .progress-bar{
+    color: black;
+    background-color: black;
+  }
+
+
+
+
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

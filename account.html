@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <link rel="stylesheet" href="account.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="account.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="landing.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="part2.html">Scenes</a>
+              <a class="nav-link" href="part2.html">My account</a>
+              <!-- <a class="nav-link disabled">Disabled</a> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+        
+
+
+
+
+
+
+
+
+        <div class="attempted">
+            <h5>Attempted Scenes</h5>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Scene</th>
+                    <th scope="col">Noise Level</th>
+                    <th scope="col">Route Complexity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Park</td>
+                    <td>Birds Chirping</td>
+                    <td>A straight route</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Street</td>
+                    <td>People Talking</td>
+                    <td>A T-junction</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Highway</td>
+                    <td>Cars Passing</td>
+                    <td>A roundabout</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="attempted">
+            <h5>History/Progress</h5>
+
+            <table class="table" id="courseTable">
+                <thead>
+                  <tr>
+                    <th scope="col">Scene</th>
+                    <th scope="col">Progress (%)</th>
+                    <th scope="col">Date (DD/MM/YYYY)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Park</td>
+                    <td>50</td>
+                    <td>02/02/2022</td>
+                  </tr>
+                  <tr>
+                    <td>Street</td>
+                    <td>30</td>
+                    <td>04/04/2022</td>
+                  </tr>
+                  <tr>
+                    <td>Highway</td>
+                    <td>65</td>
+                    <td>07/04/2022</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="attempted1">
+            <form>
+            
+                <div class="part"><h5>Record progress</h5>
+                  <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Scene</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="s_input">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Progress(%)</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control"  id="p_input">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Date (DD/MM/YYYY)</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="d_input">
+                    </div>
+                  </div>
+                  
+                </div>      
+                 
+            </form>
+            <div class="btn-container">
+                <button onclick="addProgress()" class="btn1">Enter</button>
+            </div>
+            
+            
+        </div>
+    
+
+        <div class="btn-container">
+            <p id="fourth"></p>
+            <button onclick="above50()" class="above50">Progress of 50 and above</button>
+        </div>
+
+        <footer class="text-center text-lg-start" style="background-color: black; color: white;">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2023 Copyright:
+              <a style="color: white;"   href="https://mdbootstrap.com/">Ucheoma Okoma</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
